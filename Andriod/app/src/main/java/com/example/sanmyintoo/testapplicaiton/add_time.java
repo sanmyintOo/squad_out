@@ -13,7 +13,7 @@ public class add_time extends AppCompatActivity {
         setContentView(R.layout.activity_add_time);
     }
     public void toMap(View view) {
-        Intent intent = new Intent(this, Add_Location.class);
+        Intent intent = new Intent(this, TrackingMapsActivity.class);
         startActivity(intent);
     }
 }

@@ -27,7 +27,7 @@ public class Confirm extends AppCompatActivity {
         startActivity(intent);
     }
     public void editLocation(View view) {
-        Intent intent = new Intent(this, Add_Location.class);
+        Intent intent = new Intent(this, TrackingMapsActivity.class);
         startActivity(intent);
     }
 }
