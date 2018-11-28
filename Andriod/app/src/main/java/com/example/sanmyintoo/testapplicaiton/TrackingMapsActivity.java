@@ -1,5 +1,7 @@
 package com.example.sanmyintoo.testapplicaiton;
 
+import android.location.Location;
+import android.location.LocationListener;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -10,7 +12,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class TrackingMapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class TrackingMapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
     private GoogleMap mMap;
 
@@ -34,13 +36,33 @@ public class TrackingMapsActivity extends FragmentActivity implements OnMapReady
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+  //  @Override
+public void onMapReady(GoogleMap googleMap) {
+   //     mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+     //   // Add a marker in Sydney and move the camera
+       // LatLng sydney = new LatLng(-34, 151);
+     //   mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+     //   mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+ }
+
+    @Override
+    public void onLocationChanged(Location location) {
+
+    }
+
+    @Override
+    public void onStatusChanged(String s, int i, Bundle bundle) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String s) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String s) {
+
     }
 }
