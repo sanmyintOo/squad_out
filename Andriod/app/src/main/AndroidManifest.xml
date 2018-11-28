@@ -12,6 +12,8 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:exported="true"
@@ -41,7 +43,6 @@
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".Add_Date" />
         <activity android:name=".add_time" />
-        <activity android:name=".Add_Location" />
         <activity
             android:name=".Add_members"
             android:windowSoftInputMode="stateHidden" />
